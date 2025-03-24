@@ -120,6 +120,10 @@ class Vector:
                 from core.rag.datasource.vdb.analyticdb.analyticdb_vector import AnalyticdbVectorFactory
 
                 return AnalyticdbVectorFactory
+            case VectorType.OPENSEARCH_SERVERLESS:
+                from core.rag.datasource.vdb.opensearch_serverless.opensearch_serverless_vector import OpenSearchServerlessVectorFactory
+
+                return OpenSearchServerlessVectorFactory
             case VectorType.COUCHBASE:
                 from core.rag.datasource.vdb.couchbase.couchbase_vector import CouchbaseVectorFactory
 
